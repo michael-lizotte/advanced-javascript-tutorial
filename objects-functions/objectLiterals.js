@@ -30,3 +30,30 @@ Tony.address2 = {
 }
 
 console.log(Tony)
+
+/**
+ * Json --> JavaScript Object Notation
+ * 
+ * To send data over the internet, we used to send XML formatted data:
+ * <object>
+ *  <firstname>Mary</firstname>
+ *  <isAProgrammer>true</isAProgrammer>
+ * </object>
+ * 
+ * But, for each property, we sent the property name twice (opening and 
+ * closing tag), which is a waste of bandwidth.
+ * 
+ * Json got rid of that using this notation:
+ * {
+ *  "firstname": "Mary", // <-- properties have to be wrapped in quotes
+ *  "isAProgrammer": true
+ * }
+ */
+var objectLiteral = {
+  firstname: 'Many',
+  isAProgrammer: true
+}
+
+// Converts Javascript objects to JSON
+console.log(JSON.stringify(objectLiteral))
+
